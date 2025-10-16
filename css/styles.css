@@ -21,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #5A5A5A; /* Gris Suave */
-    background-color: #F8F6F1; /* Marfil */
+    background-color: white; /* Blanco */
 }
 
 /* Contenedor principal para centrar contenido */
@@ -152,7 +152,7 @@ body {
 }
 
 .cta-button {
-    background-color: #C8A2C8; /* Lavanda */
+    background-color: #D9B26D; /* Dorado Suave */
     color: #3E6D5A; /* Verde Hoja */
     padding: 15px 30px;
     border: none;
@@ -161,11 +161,11 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(200, 162, 200, 0.3);
+    box-shadow: 0 4px 15px rgba(217, 178, 109, 0.3);
 }
 
 .cta-button:hover {
-    background-color: #E7BFBF; /* Rosa Empolvado */
+    background-color: #C8A2C8; /* Lavanda */
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(200, 162, 200, 0.4);
 }
@@ -189,11 +189,154 @@ body {
 }
 
 /* ===========================================
+   SECCIÓN DE BIENVENIDA
+   =========================================== */
+.welcome {
+    padding: 80px 0;
+    background: linear-gradient(135deg, white 0%, #F8F6F1 100%); /* Blanco a Marfil sutil */
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23C8A2C8" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%236BA292" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23E7BFBF" opacity="0.2"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #3E6D5A; /* Verde Hoja */
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.welcome-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #6BA292; /* Verde Botica */
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.welcome-text {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-paragraph,
+.welcome-mission,
+.welcome-commitment {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5A5A5A; /* Gris Suave */
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.welcome-mission {
+    background: linear-gradient(135deg, #C8A2C8 0%, #E7BFBF 100%); /* Lavanda a Rosa Empolvado */
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 5px solid #6BA292; /* Verde Botica */
+    box-shadow: 0 5px 20px rgba(200, 162, 200, 0.2);
+    font-weight: 500;
+    color: #3E6D5A; /* Verde Hoja */
+}
+
+.welcome-commitment {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3E6D5A; /* Verde Hoja */
+    text-align: center;
+    background-color: rgba(107, 162, 146, 0.1); /* Verde Botica con transparencia */
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #6BA292; /* Verde Botica */
+    margin-top: 2rem;
+}
+
+.welcome-visual {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.welcome-decorations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0.7;
+}
+
+.decoration-leaf,
+.decoration-flower {
+    font-size: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.decoration-leaf:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.decoration-flower {
+    animation-delay: 1s;
+    font-size: 2.5rem;
+}
+
+.decoration-leaf:nth-child(3) {
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Efecto de hover en la sección de bienvenida */
+.welcome-content:hover .welcome-decorations {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* ===========================================
    SECCIÓN DE SERVICIOS
    =========================================== */
 .services {
     padding: 80px 0;
-    background-color: #F8F6F1; /* Marfil */
+    background-color: white; /* Blanco */
 }
 
 .section-title {
@@ -216,25 +359,52 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
 .service-card {
     background-color: white;
-    padding: 2rem;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     border-color: #6BA292; /* Verde Botica */
+}
+
+.service-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+.service-content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .service-icon {
@@ -259,7 +429,7 @@ body {
    =========================================== */
 .projects {
     padding: 80px 0;
-    background: linear-gradient(135deg, #E7BFBF 0%, #C8A2C8 100%); /* Rosa Empolvado a Lavanda */
+    background: linear-gradient(135deg, white 0%, #E7BFBF 100%); /* Blanco a Rosa Empolvado sutil */
 }
 
 .projects .section-title {
@@ -324,8 +494,8 @@ body {
 }
 
 .project-button {
-    background-color: #6BA292; /* Verde Botica */
-    color: white;
+    background-color: #D9B26D; /* Dorado Suave */
+    color: #3E6D5A; /* Verde Hoja */
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -335,7 +505,8 @@ body {
 }
 
 .project-button:hover {
-    background-color: #3E6D5A; /* Verde Hoja */
+    background-color: #6BA292; /* Verde Botica */
+    color: white;
     transform: translateY(-2px);
 }
 
@@ -344,7 +515,7 @@ body {
    =========================================== */
 .contact {
     padding: 80px 0;
-    background-color: #F8F6F1; /* Marfil */
+    background-color: white; /* Blanco */
 }
 
 .contact-content {
@@ -395,8 +566,8 @@ body {
 }
 
 .submit-button {
-    background-color: #6BA292; /* Verde Botica */
-    color: white;
+    background-color: #D9B26D; /* Dorado Suave */
+    color: #3E6D5A; /* Verde Hoja */
     padding: 15px 30px;
     border: none;
     border-radius: 8px;
@@ -408,7 +579,8 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #3E6D5A; /* Verde Hoja */
+    background-color: #6BA292; /* Verde Botica */
+    color: white;
     transform: translateY(-2px);
 }
 
@@ -533,6 +705,43 @@ body {
         height: 250px;
     }
     
+    /* Bienvenida responsive */
+    .welcome-title {
+        font-size: 2.2rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .welcome-paragraph,
+    .welcome-mission,
+    .welcome-commitment {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .welcome-image {
+        height: 250px;
+    }
+    
+    .welcome-decorations {
+        gap: 1rem;
+    }
+    
+    .decoration-leaf,
+    .decoration-flower {
+        font-size: 1.5rem;
+    }
+    
+    .decoration-flower {
+        font-size: 2rem;
+    }
+    
+    .service-image {
+        height: 150px;
+    }
+    
     /* Servicios responsive */
     .services-grid {
         grid-template-columns: 1fr;
@@ -567,6 +776,23 @@ body {
     .avatar-img {
         width: 200px;
         height: 200px;
+    }
+    
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .welcome-mission {
+        padding: 1.5rem;
+    }
+    
+    .welcome-commitment {
+        padding: 1rem;
+        font-size: 1rem;
     }
     
     .service-card,

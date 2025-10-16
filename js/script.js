@@ -1,5 +1,5 @@
 /* ===========================================
-   LA BOTICA DE LA ABUELA - JAVASCRIPT
+   LA BOTICA DEL BIENESTAR - JAVASCRIPT
    Funcionalidades:
    - Navegación móvil
    - Formulario de contacto
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // INICIALIZACIÓN FINAL
     // ===========================================
     
-    console.log('🌿 La Botica de la Abuela - Sitio web cargado correctamente');
+    console.log('🌿 La Botica del Bienestar - Sitio web cargado correctamente');
     console.log('Funcionalidades disponibles:');
     console.log('- Navegación móvil');
     console.log('- Formulario de contacto con validación');
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Función para mostrar información de la empresa
 function showCompanyInfo() {
     const info = {
-        nombre: 'La Botica de la Abuela',
+        nombre: 'La Botica del Bienestar',
         descripcion: 'Emprendimiento de salud y bienestar natural',
         servicios: ['Asesorías de bienestar', 'Productos naturales', 'Infusiones especiales', 'Aceites esenciales'],
         contacto: {

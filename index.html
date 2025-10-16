@@ -4,13 +4,18 @@
     <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Botica de la Abuela - Salud y Bienestar Natural</title>
+    <title>La Botica del Bienestar - Salud y Bienestar Natural</title>
     
     <!-- Enlace a Google Fonts para tipografía Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Enlace a nuestro archivo CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Chatbot de Chatbase -->
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="_2eDkUsMejNXbFlwUYT-1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
 </head>
 <body>
     <!-- Navegación principal -->
@@ -18,12 +23,13 @@
         <div class="nav-container">
             <!-- Logo de la empresa -->
             <div class="nav-logo">
-                <h2>🌿 La Botica de la Abuela</h2>
+                <h2>🌿 La Botica del Bienestar</h2>
             </div>
             
             <!-- Menú de navegación -->
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#bienvenida" class="nav-link">Bienvenida</a></li>
                 <li><a href="#servicios" class="nav-link">Servicios</a></li>
                 <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
@@ -43,7 +49,7 @@
         <div class="hero-container">
             <div class="hero-content">
                 <!-- Título principal -->
-                <h1 class="hero-title">La Botica de la Abuela</h1>
+                <h1 class="hero-title">La Botica del Bienestar</h1>
                 
                 <!-- Subtítulo descriptivo -->
                 <p class="hero-subtitle">Tu aliada en salud y bienestar natural</p>
@@ -51,7 +57,7 @@
                 <!-- Descripción del emprendimiento -->
                 <p class="hero-description">
                     Descubre el poder de la naturaleza a través de nuestros productos naturales, 
-                    asesorías personalizadas y tratamientos holísticos. En La Botica de la Abuela 
+                    asesorías personalizadas y tratamientos holísticos. En La Botica del Bienestar 
                     combinamos la sabiduría ancestral con técnicas modernas para brindarte una 
                     experiencia de bienestar integral.
                 </p>
@@ -60,9 +66,47 @@
                 <button class="cta-button">Conoce nuestros servicios</button>
             </div>
             
-            <!-- Avatar de la abuela (imagen generada por IA) -->
+            <!-- Logo blanco de la empresa como imagen de perfil -->
             <div class="hero-image">
-                <img src="img/abuela-avatar.jpg" alt="Abuela sabia y confiable de La Botica" class="avatar-img">
+                <img src="img/logo-blanco" alt="Logo blanco de La Botica del Bienestar" class="avatar-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida" class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h2 class="welcome-title">Bienvenido a La Botica del Bienestar 🌿</h2>
+                <p class="welcome-subtitle">Un espacio creado para acompañarte de manera integral en tu proceso de sanación y transformación.</p>
+                
+                <div class="welcome-text">
+                    <p class="welcome-paragraph">
+                        Aquí creemos que el equilibrio entre lo físico y lo emocional es la clave para recuperar tu vitalidad. 
+                        Por eso, trabajamos con preparados personalizados de esencias florales, medicamentos biológicos de 
+                        laboratorios reconocidos y fórmulas naturales que apoyan cada diagnóstico de forma respetuosa y sin 
+                        efectos secundarios.
+                    </p>
+                    
+                    <p class="welcome-mission">
+                        <strong>Nuestra misión es sencilla:</strong> ayudarte a soltar cargas, recuperar energía y abrirte 
+                        a los cambios que te permitirán vivir con más claridad, paz y bienestar.
+                    </p>
+                    
+                    <p class="welcome-commitment">
+                        En La Botica del Bienestar no solo te entregamos productos, te acompañamos en tu camino de transformación.
+                    </p>
+                </div>
+                
+                <!-- Imagen decorativa y elementos -->
+                <div class="welcome-visual">
+                    <img src="img/bienvenida-natural.jpg" alt="Elementos naturales de bienestar" class="welcome-image">
+                    <div class="welcome-decorations">
+                        <div class="decoration-leaf">🍃</div>
+                        <div class="decoration-flower">🌸</div>
+                        <div class="decoration-leaf">🍃</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -76,46 +120,88 @@
             
             <!-- Grid de servicios -->
             <div class="services-grid">
-                <!-- Servicio 1: Asesorías -->
+                <!-- Servicio 1: Acompañamiento terapéutico -->
                 <div class="service-card">
-                    <div class="service-icon">💚</div>
-                    <h3>Asesorías de Bienestar</h3>
-                    <p>Consultas personalizadas para mejorar tu calidad de vida a través de métodos naturales y holísticos.</p>
+                    <div class="service-image">
+                        <img src="img/Acompañamiento.jpg" alt="Acompañamiento terapéutico personalizado">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">💚</div>
+                        <h3>Acompañamiento Terapéutico</h3>
+                        <p>Sesiones virtuales para guiar procesos emocionales y de sanación con seguimiento cercano vía WhatsApp.</p>
+                    </div>
                 </div>
                 
-                <!-- Servicio 2: Productos Naturales -->
+                <!-- Servicio 2: Esencias florales -->
                 <div class="service-card">
-                    <div class="service-icon">🌿</div>
-                    <h3>Productos Naturales</h3>
-                    <p>Hierbas medicinales, suplementos y productos orgánicos cuidadosamente seleccionados para tu salud.</p>
+                    <div class="service-image">
+                        <img src="img/flor.jpg" alt="Formulación de esencias florales personalizadas">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🌸</div>
+                        <h3>Esencias Florales</h3>
+                        <p>Preparados personalizados según diagnóstico emocional y físico, incluyendo sprays magistrales y gotas.</p>
+                    </div>
                 </div>
                 
-                <!-- Servicio 3: Infusiones -->
+                <!-- Servicio 3: Protocolos de bienestar -->
                 <div class="service-card">
-                    <div class="service-icon">🍵</div>
-                    <h3>Infusiones Especiales</h3>
-                    <p>Mezclas únicas de té e infusiones para relajación, digestión y bienestar general.</p>
+                    <div class="service-image">
+                        <img src="img/Bien.jpg" alt="Diseño de protocolos de bienestar">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">📋</div>
+                        <h3>Protocolos de Bienestar</h3>
+                        <p>Combinación de productos florales, homeopáticos y hábitos de autocuidado para ansiedad, insomnio, duelos y más.</p>
+                    </div>
                 </div>
                 
-                <!-- Servicio 4: Aceites Esenciales -->
+                <!-- Servicio 4: Seguimiento terapéutico -->
                 <div class="service-card">
-                    <div class="service-icon">🌸</div>
-                    <h3>Aceites Esenciales</h3>
-                    <p>Aromaterapia con aceites puros para equilibrar emociones y mejorar tu estado de ánimo.</p>
+                    <div class="service-image">
+                        <img src="img/seg.jpg" alt="Seguimiento terapéutico personalizado">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">📞</div>
+                        <h3>Seguimiento Terapéutico</h3>
+                        <p>Recordatorios de uso de productos y ajustes de la fórmula según evolución del tratamiento.</p>
+                    </div>
                 </div>
                 
-                <!-- Servicio 5: Terapias Holísticas -->
+                <!-- Servicio 5: Armonización de espacios -->
                 <div class="service-card">
-                    <div class="service-icon">🧘</div>
-                    <h3>Terapias Holísticas</h3>
-                    <p>Reiki, meditación guiada y técnicas de relajación para el equilibrio cuerpo-mente-espíritu.</p>
+                    <div class="service-image">
+                        <img src="img/Espacios.jpg" alt="Armonización de espacios energéticos">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏠</div>
+                        <h3>Armonización de Espacios</h3>
+                        <p>Sprays energéticos y florales para limpieza y equilibrio de ambientes en tu hogar o lugar de trabajo.</p>
+                    </div>
                 </div>
                 
-                <!-- Servicio 6: Nutrición Natural -->
+                <!-- Servicio 6: Nutrición y suplementos -->
                 <div class="service-card">
-                    <div class="service-icon">🥗</div>
-                    <h3>Nutrición Natural</h3>
-                    <p>Planes alimenticios basados en ingredientes naturales y orgánicos para una vida saludable.</p>
+                    <div class="service-image">
+                        <img src="img/nutri.jpg" alt="Recomendaciones nutricionales y suplementos">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🥗</div>
+                        <h3>Nutrición y Suplementos</h3>
+                        <p>Orientación sobre proteínas, vitaminas y complementos, especialmente para adultos mayores y pacientes con desgaste energético.</p>
+                    </div>
+                </div>
+                
+                <!-- Servicio 7: Educación y contenidos -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/edu.jpg" alt="Educación y contenidos de bienestar">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">📚</div>
+                        <h3>Educación y Contenidos</h3>
+                        <p>Información sobre ansiedad, manejo de emociones, autocuidado y espiritualidad a través de charlas educativas.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,7 +219,7 @@
                 <!-- Proyecto 1: Desintoxicación -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proyecto1-desintoxicacion.jpg" alt="Programa de desintoxicación natural">
+                        <img src="img/img 1.jpg" alt="Programa de desintoxicación natural">
                     </div>
                     <div class="project-content">
                         <h3>Programa de Desintoxicación Natural</h3>
@@ -145,7 +231,7 @@
                 <!-- Proyecto 2: Manejo del Estrés -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proyecto2-estres.jpg" alt="Manejo natural del estrés">
+                        <img src="img/img 2.jpg" alt="Manejo natural del estrés">
                     </div>
                     <div class="project-content">
                         <h3>Manejo Natural del Estrés</h3>
@@ -157,7 +243,7 @@
                 <!-- Proyecto 3: Salud Digestiva -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proyecto3-digestivo.jpg" alt="Mejora de la salud digestiva">
+                        <img src="img/img 3.jpg" alt="Mejora de la salud digestiva">
                     </div>
                     <div class="project-content">
                         <h3>Mejora de la Salud Digestiva</h3>
@@ -169,7 +255,7 @@
                 <!-- Proyecto 4: Sueño Reparador -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/proyecto4-sueno.jpg" alt="Programa para mejor sueño">
+                        <img src="img/img 4.jpg" alt="Programa para mejor sueño">
                     </div>
                     <div class="project-content">
                         <h3>Programa de Sueño Reparador</h3>
@@ -248,7 +334,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 La Botica de la Abuela – Todos los derechos reservados</p>
+            <p>&copy; 2025 La Botica del Bienestar – Todos los derechos reservados</p>
         </div>
     </footer>
 
